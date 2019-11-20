@@ -1,0 +1,135 @@
+/* general */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.fullscreen {
+  min-height: 100vh;
+  position: relative;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("./lotus.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.background::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: 0.75;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* section */
+
+.section__title {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.section__subtitle {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffa500;
+}
+
+.section__list {
+  list-style: none;
+}
+
+.section__sublist {
+  text-align: left;
+}
+
+.section__sublist li {
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section__item {
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 10px #000;
+}
+
+.section__name {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.section__price {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.section__study {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.section__price--orange {
+  font-weight: 700;
+  color: #ffa500;
+}
+
+.section__study--teal {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #008080;
+}
+
+.section__email {
+  margin-bottom: 20px;
+}
+
+.section__email--orange {
+  font-weight: 700;
+  color: #ffa500;
+}
+
+/* button */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #008080;
+  opacity: 0.8;
+  transition: opacity 0.2s linear;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/* line */
+
+.line {
+  width: 50%;
+  margin: 40px auto;
+}
